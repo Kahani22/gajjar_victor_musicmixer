@@ -1,1 +1,50 @@
 @charset "utf-8"
+
+.hidden
+{
+	display: none;
+}
+
+body
+{	
+	display: flex;
+	align-items: flex-end;
+	background-image: url("../images/backdrop.jpg");
+	position: center;
+	background-repeat: no-repeat;
+}
+
+#mainContainer
+{	
+	background-color: black;
+	margin-top: 597px;
+	display: flex;
+	width: 1366px;
+	height: 70px;
+	align-items: center;
+	flex-direction: row;
+}
+
+h1
+{
+	margin-left: 20px;
+	color: white;
+	font-size: 26px;
+	font-family: Helvetica, sans-serif;
+}
+
+#line1
+{
+	margin-left: 10px;
+	background-color: white;
+	width: 3px;
+	height: 45px;
+}
+
+p
+{
+	margin-left: 20px;
+	color: white;
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+}
