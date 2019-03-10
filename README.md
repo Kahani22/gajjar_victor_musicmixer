@@ -12,7 +12,7 @@ TO DO: From the github link https://github.com/Kahani22/gajjar_victor_musicmixer
 
 ## Usage
 
-TO DO: The Music Room is a website with a dynamic visual and audio experience. The Room consists of several objects such as clock, chair, guitar, etc. which are placed in a manner that it gives a visual of a room. Each object in a room has its own audio. Which when dragged on to the compose sheet (with null sound) creates dynamic music according to the series of objects dropped into it. Each time user replays with a different sequence of objects it gives a different experience than the previous one. The website is made more interactive by various transitions and hover over effects.
+TO DO: The Music Room is a website with a dynamic visual and audio experience. The user can hover over different strings to get different notes on the guitar. Each time user clicks different light effect is given to indicate diferent notes on the guitar.The website is made more interactive by various transitions and hover over effects along with audio. It is an interactive way for a user to learn the instrument and experiment to create new music each time.
 
 ## Contributors
 
