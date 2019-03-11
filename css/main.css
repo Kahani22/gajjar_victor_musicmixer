@@ -44,7 +44,7 @@ body
 	background-color: white;
 	position: relative;
 	margin-left: auto;
-	/*opacity: 0;*/
+	opacity: 0;
 }
 
 #string1
