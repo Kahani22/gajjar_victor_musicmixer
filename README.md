@@ -8,11 +8,11 @@ animation, and play a compiled audio track
 
 ## Installation
 
-TO DO: From the github link https://github.com/Kahani22/gajjar_victor_musicmixer clone the folder structure to access the webpage which consists of a music room.
+TO DO: From the github link https://github.com/Kahani22/gajjar_victor_musicmixer clone the folder structure to access the webpage which consists of a music mixer.
 
 ## Usage
 
-TO DO: The Music Room is a website with a dynamic visual and audio experience. The user can hover over different strings to get different notes on the guitar. Each time user clicks different light effect is given to indicate diferent notes on the guitar.The website is made more interactive by various transitions and hover over effects along with audio. It is an interactive way for a user to learn the instrument and experiment to create new music each time.
+TO DO: The Dynamic Duet is a website with a dynamic visual and audio experience. The user can hover over different strings to get different notes on the guitar. Each time user clicks assigned keys, light effect is given to indicate diferent keys of Piano/drum.The website is made more interactive by various transitions and hover over effects along with dual audio. It is an interactive way for a user to learn the instrument and experiment to create new musical experience each time.
 
 ## Contributors
 
