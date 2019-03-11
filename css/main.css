@@ -8,7 +8,7 @@
 body
 {	
 	display: flex;
-	align-items: flex-end;
+	margin: 0 auto;
 	background-image: url("../images/backdrop-2.jpg");
 	position: center;
 	background-repeat: no-repeat;
@@ -44,7 +44,7 @@ body
 	background-color: white;
 	position: relative;
 	margin-left: auto;
-	opacity: 0;
+	opacity: 0.2;
 }
 
 #string1
@@ -80,3 +80,4 @@ body
 {
 	margin-right: auto;
 }
+
