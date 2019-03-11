@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 
 .hidden
 {
@@ -9,42 +9,74 @@ body
 {	
 	display: flex;
 	align-items: flex-end;
-	background-image: url("../images/backdrop.jpg");
+	background-image: url("../images/backdrop-2.jpg");
 	position: center;
 	background-repeat: no-repeat;
 }
 
 #mainContainer
 {	
-	background-color: black;
-	margin-top: 597px;
 	display: flex;
-	width: 1366px;
-	height: 70px;
 	align-items: center;
-	flex-direction: row;
+	width: 1366px;
 }
 
-h1
+#guitar
 {
-	margin-left: 20px;
-	color: white;
-	font-size: 26px;
-	font-family: Helvetica, sans-serif;
+	position: relative;
 }
 
-#line1
+.strings
 {
-	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 560px;
+	height: 80px;
+	transform: translateX(520px) translateY(-70px) rotate(-3deg);;
+}
+
+.eadgbe
+{
+	cursor: grab;
+	height: 10px;
+	width: 200px;
 	background-color: white;
-	width: 3px;
-	height: 45px;
+	position: relative;
+	margin-left: auto;
+	opacity: 0;
 }
 
-p
+#string1
 {
-	margin-left: 20px;
-	color: white;
-	font-size: 18px;
-	font-family: Arial, sans-serif;
+	margin-right: 30px;
+	margin-bottom: 8px;
+}
+
+#string2
+{
+	margin-left: 200px;
+	margin-bottom: 8px;
+}
+
+#string3
+{
+	margin-right: 100px;
+	margin-bottom: 8px;
+}
+
+#string4
+{
+	margin-left: auto;
+	margin-bottom: 8px;
+}
+#string5
+{
+	margin-right: 440px;
+	margin-bottom: 8px;
+}
+
+#string6
+{
+	margin-right: auto;
 }
