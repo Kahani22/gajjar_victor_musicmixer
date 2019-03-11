@@ -1,12 +1,29 @@
-//create a pickel jar, label it as firstName, put a string in it
-//var firstName = "Marco";
+(() => {
+	console.log("Javascript is linked up");
 
-//alert("Hello " + firstName);
+	/*let strings = document.querySelectorAll('.eadgbe');
 
-//modern js
+	function guitarStrumming() {
+		strings.querySelectorAll('.eadgbe').forEach(div => {
+			div.addEventListener("dragstart", function(e) {
+				console.log('draggin...')
+			e.dataTransfer.setData("text/plain", this.id);
+			});
+		});
+	}*/
 
-//alert(`Hello ${firstName} !!!`);
+	/*var audio = document.getElementById(".eadgbe");*/
 
-//console.log(firstName);
+	/*var strings = [0, 1, 2, 3, 4, 5]
 
-console.log("Javascript is linked up");
+	var strings = document.querySelectorAll(".eadgbe");
+
+	strings.addEventListener("click", playAudio)
+		console.log("WUBDFAOUBFOANF");
+		function playAudio() {
+	  audio.play();
+	};*/
+
+	
+
+})();
