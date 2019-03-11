@@ -12,7 +12,7 @@ TO DO: From the github link https://github.com/Kahani22/gajjar_victor_musicmixer
 
 ## Usage
 
-TO DO: The Dynamic Duet is a website with a dynamic visual and audio experience. The user can hover over different strings to get different notes on the guitar. Each time user clicks assigned keys, light effect is given to indicate diferent keys of Piano/drum.The website is made more interactive by various transitions and hover over effects along with dual audio. It is an interactive way for a user to learn the instrument and experiment to create new musical experience each time.
+TO DO: The AUD.UO is a website with a dynamic visual and audio experience. The user can hover over and play different strings to get different notes on the guitar. In addition, each time user clicks assigned keys,light effect is given to indicate diferent keys of Piano.The website is made more interactive by various transitions and hover over effects along with dual audio. It is an interactive way for a user to learn the instrument and experiment to create new musical experience each time.
 
 ## Contributors
 
