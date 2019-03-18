@@ -44,7 +44,14 @@ body
 	background-color: white;
 	position: relative;
 	margin-left: auto;
-	opacity: 0.2;
+	transition: .5s;
+	opacity: 0;
+}
+
+.eadgbe:hover
+{
+	background-color: red;
+	opacity: 0.5;
 }
 
 #string1
