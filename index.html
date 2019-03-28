@@ -2,28 +2,44 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>The Music Room</title>
+		<title>Au.duo</title>
 		<link href="css/reset.css" rel="stylesheet" type="text/css">
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<section id="mainContainer"><h1 class="hidden">The Music Room</h1>
-			<div id="guitar"><img src="images/guitar-black.png"></div>
-			<section class="strings">
-				<div class="eadgbe" id="string1"></div>
-				<div class="eadgbe" id="string2"></div>
-				<div class="eadgbe" id="string3"></div>
-				<div class="eadgbe" id="string4"></div>
-				<div class="eadgbe" id="string5"></div>
-				<div class="eadgbe" id="string6"></div>
-			</section>
-			<audio src="assets/audio_clips/a-major.ogg" id="audio0"></audio>
-			<audio src="assets/audio_clips/b-minor.mp3" id="audio1"></audio>
-			<audio src="assets/audio_clips/c-major.mp3" id="audio2"></audio>
-			<audio src="assets/audio_clips/c-minor.mp3" id="audio3"></audio>
-			<audio src="assets/audio_clips/d-major.mp3" id="audio4"></audio>
-			<audio src="assets/audio_clips/e-minor.mp3" id="audio5"></audio>
-		</section>
+		<section id="mainContainer"><h1 class="hidden">Au.duo</h1>
+		<div class="background">
+			<div id="background1"><img src="images/strings.svg" alt="guitar strings"></div>
+			<div id="background2"><img src="images/drums.svg" alt="drums"></div>
+		</div>
+
+		<div class="drumsticks">
+			<div class="drumstick" id="drumstick1"></div>
+		</div>
+
+		<div class="dropzones">
+			<div class="dropzone" id="crash"></div>
+			<div class="dropzone" id="hi-tom"></div>
+			<div class="dropzone" id="snare"></div>
+			<div class="dropzone" id="med-tom"></div>
+			<div class="dropzone" id="floor-tom"></div>
+			<div class="dropzone" id="bass-drum"></div>
+			<div class="dropzone" id="crash2"></div>
+			<div class="dropzone" id="ride"></div>
+			<div class="dropzone" id="open-hat"></div>
+			<div class="dropzone" id="kick"></div>
+		</div>
+		
+		<audio class="audio" src="assets/audio_clips/crash.wav"></audio>
+		<audio class="audio2" src="assets/audio_clips/hi-tom.wav"></audio>
+		<audio class="audio3" src="assets/audio_clips/snare.wav"></audio>
+		<audio class="audio4" src="assets/audio_clips/med-tom.wav"></audio>
+		<audio class="audio5" src="assets/audio_clips/floor-tom.wav"></audio>
+		<audio class="audio6" src="assets/audio_clips/bass-drum.wav"></audio>
+		<audio class="audio7" src="assets/audio_clips/crash2.wav"></audio>
+		<audio class="audio8" src="assets/audio_clips/ride.wav"></audio>
+		<audio class="audio9" src="assets/audio_clips/open-hat.wav"></audio>
+		<audio class="audio10" src="assets/audio_clips/kick.wav"></audio>
     <script src="js/main.js"></script>
 	</body>
 </html>
