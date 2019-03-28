@@ -6,85 +6,190 @@
 }
 
 body
-{	
-	display: flex;
-	margin: 0 auto;
-	background-image: url("../images/backdrop-2.jpg");
-	position: center;
+{
+	background-image: url(../images/backdrop-2.jpg);
 	background-repeat: no-repeat;
 }
 
-#mainContainer
-{	
-	display: flex;
-	align-items: center;
+.mainContainer
+{
+	height: 768px;
 	width: 1366px;
 }
 
-#guitar
+.background
+{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#background1 img
+{
+	position: absolute;
+}
+
+#background2 img
 {
 	position: relative;
 }
 
-.strings
+.drumsticks
 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	cursor: pointer;
 	position: absolute;
-	width: 560px;
-	height: 80px;
-	transform: translateX(520px) translateY(-70px) rotate(-3deg);;
+	z-index: 7;
 }
 
-.eadgbe
+#drumstick1
 {
-	cursor: grab;
-	height: 10px;
-	width: 200px;
-	background-color: white;
+	height: 250px;
+	width: 100px;
+	transform: rotate(-20deg);
+	padding: 30px;
+}
+
+.dropzones
+{
 	position: relative;
-	margin-left: auto;
-	transition: .5s;
-	opacity: 0;
+	height: 768px;
+	width: 1366px;
 }
 
-.eadgbe:hover
-{
-	background-color: red;
-	opacity: 0.5;
+.dropzone:hover
+{	
+	transition: 2s ease;
+	-webkit-animation-name: dropzoneGlow;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
 }
 
-#string1
+@-webkit-keyframes dropzoneGlow
 {
-	margin-right: 30px;
-	margin-bottom: 8px;
+	0% {
+		box-shadow: 0px 0px 10px 10px #f4e542;
+		opacity: 0; 
+	}
+	30%
+	{
+		opacity: 1;
+	}
+	100% {
+		box-shadow: 0px 0px 30px 30px #f4c242;
+		opacity: 0;
+	}
 }
 
-#string2
+#crash
 {
-	margin-left: 200px;
-	margin-bottom: 8px;
+	position: relative;
+	width: 210px;
+	height: 200px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 335px;
+	top: 80px;
 }
 
-#string3
+#hi-tom
 {
-	margin-right: 100px;
-	margin-bottom: 8px;
+	position: relative;
+	width: 160px;
+	height: 160px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 460px;
+	top: 130px;
 }
 
-#string4
+#snare
 {
-	margin-left: auto;
-	margin-bottom: 8px;
-}
-#string5
-{
-	margin-right: 440px;
-	margin-bottom: 8px;
-}
-
-#string6
-{
-	margin-right: auto;
+	position: relative;
+	width: 130px;
+	height: 130px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 500px;
+	top: -150px;
 }
 
+#med-tom
+{
+	position: relative;
+	width: 160px;
+	height: 160px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 690px;
+	top: -160px;
+}
+
+#floor-tom
+{
+	position: relative;
+	width: 155px;
+	height: 155px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 745px;
+	top: -155px;
+}
+
+#bass-drum
+{
+	position: relative;
+	width: 170px;
+	height: 170px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 255px;
+	top: -470px;
+}
+
+#crash2
+{
+	position: relative;
+	width: 245px;
+	height: 245px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 850px;
+	top: -535px;
+}
+
+#ride
+{
+	position: relative;
+	width: 220px;
+	height: 220px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 690px;
+	top: -1085px;
+}
+
+#open-hat
+{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	cursor: pointer;
+	left: 837px;
+	top: -1150px;
+}
+
+#kick
+{
+	position: relative;
+	width: 20px;
+	height: 35px;
+	transform: rotate(-30deg);
+	cursor: pointer;
+	left: 460px;
+	top: -1160px;
+	border-radius: 5px;
+}
