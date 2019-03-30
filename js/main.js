@@ -3,16 +3,16 @@
 
 	let		drumsticks  = document.querySelector(".drumsticks");
         dropzones   = document.querySelector(".dropzones");
-      	audio	     	= document.querySelector(".audio");
-      	audio2      = document.querySelector(".audio2");
-        audio3      = document.querySelector(".audio3");
-        audio4      = document.querySelector(".audio4");
-        audio5      = document.querySelector(".audio5");
-        audio6      = document.querySelector(".audio6");
-        audio7      = document.querySelector(".audio7");
-        audio8      = document.querySelector(".audio8");
-        audio9      = document.querySelector(".audio9");
-        audio10      = document.querySelector(".audio10");
+      	aud	     	= document.querySelector(".aud");
+      	aud2      = document.querySelector(".aud2");
+        aud3      = document.querySelector(".aud3");
+        aud4      = document.querySelector(".aud4");
+        aud5      = document.querySelector(".aud5");
+        aud6      = document.querySelector(".aud6");
+        aud7      = document.querySelector(".aud7");
+        aud8      = document.querySelector(".aud8");
+        aud9      = document.querySelector(".aud9");
+        aud10      = document.querySelector(".aud10");
 
   let crashDropzone 	   = document.querySelector('#crash');
   	  hiTomDropzone 	   = document.querySelector('#hi-tom');
@@ -48,73 +48,101 @@
   crashDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio.currentTime = 0;
-      audio.play();
+      aud.currentTime = 0;
+      aud.play();
   });
 
   hiTomDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio2.currentTime = 0;
-      audio2.play();
+      aud2.currentTime = 0;
+      aud2.play();
   });
 
   snareDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio3.currentTime = 0;
-      audio3.play();
+      aud3.currentTime = 0;
+      aud3.play();
   });
 
   medTomDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio4.currentTime = 0;
-      audio4.play();
+      aud4.currentTime = 0;
+      aud4.play();
   });
 
   floorTomDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio5.currentTime = 0;
-      audio5.play();
+      aud5.currentTime = 0;
+      aud5.play();
   });
 
   bassDrumDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio6.currentTime = 0;
-      audio6.play();
+      aud6.currentTime = 0;
+      aud6.play();
   });
 
   crash2Dropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio7.currentTime = 0;
-      audio7.play();
+      aud7.currentTime = 0;
+      aud7.play();
   });
 
   rideDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio8.currentTime = 0;
-      audio8.play();
+      aud8.currentTime = 0;
+      aud8.play();
   });
 
   openHatDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio9.currentTime = 0;
-      audio9.play();
+      aud9.currentTime = 0;
+      aud9.play();
   });
 
   kickDropzone.addEventListener("drop", function(e) {
       e.preventDefault();
       console.log("nice!");
-      audio10.currentTime = 0;
-      audio10.play();
+      aud10.currentTime = 0;
+      aud10.play();
   });
 
   /*createDrumstick(0);*/
+
+  /*piano sounds*/
+  function pianoPlonk(event) {
+
+      let audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+      if (!audio) { return; }
+      audio.currentTime = 0;
+      audio.play();
+
+      //animation on play
+      let key = document.querySelector(`div[data-key="${event.keyCode}"]`);
+      key.classList.add('pianoKeyTransition');
+    };
+
+    function removePianoTransition(event) {
+      // debugger;
+      if (event.propertyName !== "transform") {
+        return;
+      } else {
+        event.target.classList.remove('pianoKeyTransition');
+      }
+    };
+
+    const keys = Array.from(document.querySelectorAll('.rows'));
+    keys.forEach(key => key.addEventListener("transitionend", removePianoTransition));
+
+    //play piano
+    window.addEventListener("keydown", pianoPlonk);
 
 })();
