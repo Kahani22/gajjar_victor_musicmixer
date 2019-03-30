@@ -206,7 +206,7 @@ body
 {
 	display: flex;
 	flex-direction: row;
-	transform: translateY(300px);
+	transform: translateY(350px);
 }
 
 .pianoKey
