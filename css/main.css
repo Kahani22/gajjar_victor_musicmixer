@@ -202,14 +202,7 @@ body
 	margin-top: -500px;
 }
 
-.rows:first-child
-{
-	display: flex;
-	flex-direction: row;
-	transform: translateY(-220px);
-}
-
-.rows:last-child
+.rows
 {
 	display: flex;
 	flex-direction: row;
@@ -227,7 +220,7 @@ body
 /*	-webkit-animation-name: pianoKeyGlow;
 	-webkit-animation-duration: 5s;
 	-webkit-animation-iteration-count: infinite;*/
-	transition: all 1s;
+	transition: all .5s;
 }
 
 /*@-webkit-keyframes pianoKeyGlow
@@ -262,7 +255,9 @@ kbd
 	border: none;
 	background-color: rgba(255, 255, 255, .5);*/
 	transform: scale(1.2);
-	height: 200px;
+	height: 500px;
+	background-color: #eee;
+	transform: translateY(-500px);
 }
 /*	-webkit-animation-name: pianoKeyPlayTransition;
 	-webkit-animation-duration: 3s;
