@@ -199,21 +199,21 @@ body
 {
 	display: flex;
 	flex-direction: column;
-	height: 768px;
-	margin-top: -768px;
-	position: relative;
-}
-
-.rows
-{
-	display: flex;
-	flex-direction: row;
-	padding-bottom: 500px;
+	margin-top: -500px;
 }
 
 .rows:first-child
 {
-	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	transform: translateY(-220px);
+}
+
+.rows:last-child
+{
+	display: flex;
+	flex-direction: row;
+	transform: translateY(300px);
 }
 
 .pianoKey
@@ -228,7 +228,6 @@ body
 	-webkit-animation-duration: 5s;
 	-webkit-animation-iteration-count: infinite;*/
 	transition: all 1s;
-	overflow-wrap: normal;
 }
 
 /*@-webkit-keyframes pianoKeyGlow
