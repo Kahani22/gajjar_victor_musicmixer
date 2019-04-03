@@ -11,10 +11,60 @@ body
 	background-repeat: no-repeat;
 }
 
+video, header
+{
+	-webkit-animation-name: logoAnim;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+	position: absolute;
+}
+
+@-webkit-keyframes logoAnim
+{
+	0% {
+		opacity: 1;
+		display: block;
+	}
+	60% {
+		 opacity: 1;
+	}
+	99% {
+		display:block;
+	}
+	100% {
+		display: none;
+		opacity: 0
+	}
+}
+
+
 .mainContainer
 {
 	height: 768px;
 	width: 1366px;
+}
+
+div
+{
+	-webkit-animation-name: pageAnim;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes pageAnim
+{
+	0% {
+		opacity: 0;
+	}
+	80% {
+		transform: translateY(20px); 
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1
+	}
 }
 
 .background
@@ -28,14 +78,112 @@ body
 #background1 img
 {
 	position: absolute;
+	z-index: 3;
 }
 
 #background2 img
 {
 	position: relative;
+	z-index: 4;
 }
 
-.drumsticks
+#note1
+{
+	width: 260px;
+	height: 260px;
+	transform: translateX(10px) translateY(115px);
+	-webkit-animation-name: note1;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes note1
+{
+	0% {
+		filter: brightness(130%); 
+	}
+	50%
+	{
+		filter: brightness(60%);
+	}
+	100% {
+		filter: brightness(130%);
+	}
+}
+
+
+#note2
+{
+	width: 250px;
+	height: 250px;
+	transform: translateY(280px) translateX(-130px);
+	-webkit-animation-name: note2;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes note2
+{
+	0% {
+		filter: brightness(130%); 
+	}
+	50%
+	{
+		filter: brightness(60%);
+	}
+	100% {
+		filter: brightness(130%);
+	}
+}
+
+#note3
+{
+	width: 240px;
+	height: 240px;
+	transform: translateY(200px) translateX(570px);
+	-webkit-animation-name: note2;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes note2
+{
+	0% {
+		filter: brightness(130%); 
+	}
+	50%
+	{
+		filter: brightness(60%);
+	}
+	100% {
+		filter: brightness(130%);
+	}
+}
+
+#v1
+{
+	width: 220px;
+	height: 220px;
+	transform: translateX(-380px) translateY(295px);
+	filter: brightness(80%);
+}
+
+#v2
+{
+	width: 220px;
+	height: 220px;
+	transform: translateX(-280px) translateY(140px);
+	filter: brightness(80%);
+}
+
+#v3
+{
+	width: 220px;
+	height: 220px;
+	transform: translateX(920px) translateY(-170px);
+	filter: brightness(80%);
+}
+/*.drumsticks
 {
 	display: flex;
 	flex-direction: row;
@@ -50,7 +198,7 @@ body
 	width: 100px;
 	transform: rotate(-20deg);
 	padding: 30px;
-}
+}*/
 
 .dropzones
 {
@@ -58,6 +206,8 @@ body
 	height: 768px;
 	width: 1366px;
 	resize: horizontal;
+	margin-top: -485px;
+	z-index: 6;
 }
 
 .dropzone:hover
@@ -71,7 +221,7 @@ body
 @-webkit-keyframes dropzoneGlow
 {
 	0% {
-		box-shadow: 0px 0px 10px 10px #f4e542;
+		box-shadow: 0px 0px 10px 10px #ccc;
 		opacity: 0; 
 	}
 	30%
@@ -79,7 +229,7 @@ body
 		opacity: 1;
 	}
 	100% {
-		box-shadow: 0px 0px 30px 30px #f4c242;
+		box-shadow: 0px 0px 30px 30px #ccc;
 		opacity: 0;
 	}
 }
@@ -197,19 +347,20 @@ body
 
 .pianoKeys
 {
-	display: flex;
-	flex-direction: column;
-	margin-top: -500px;
-	width: 100%;
+	margin: 0 auto
+	height: 100px;
+	z-index: 7;
+	position: relative;
+	margin-top: -200px;
 }
 
 .rows
 {
 	display: flex;
 	flex-direction: row;
-	transform: translateY(350px);
 	width: 100%;
 	justify-content: space-evenly;
+	z-index: 7;
 }
 
 .pianoKey
@@ -219,6 +370,7 @@ body
 	background-color: rgba(0, 0, 0, .5);
 	border-radius: 100px;
 	border: solid white 3px;
+	z-index: 7;
 /*	-webkit-animation-name: pianoKeyGlow;
 	-webkit-animation-duration: 5s;
 	-webkit-animation-iteration-count: infinite;*/
