@@ -25,14 +25,6 @@
       openHatDropzone     = document.querySelector('#open-hat');
       kickDropzone     = document.querySelector('#kick');
 
-  /*function createDrumstick(drumstick) {
-    let newDrumstick = `<img draggable id="drumstick1" class="drumstick" src="images/drumstick1.svg" alt="drumstick">`;
-
-        drumsticks.innerHTML += newDrumstick;
-
-    initDrag();
-  } */
-
   function initDrag() {
     drumsticks.querySelector('img');
     img.addEventListener("dragstart", function(e) {
