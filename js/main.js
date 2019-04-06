@@ -1,6 +1,7 @@
 (() => {
 	console.log("Ready to jam!!!");
 
+	//long method
 	let		drumsticks  = document.querySelector(".drumsticks");
         dropzones   = document.querySelector(".dropzones");
       	aud	     	= document.querySelector(".aud");
@@ -107,8 +108,6 @@
       aud10.play();
   });
 
-  /*createDrumstick(0);*/
-
   /*piano sounds*/
   function pianoPlonk(event) {
 
@@ -131,6 +130,7 @@
       }
     };
 
+    //piano transition
     const keys = Array.from(document.querySelectorAll('.rows'));
     keys.forEach(key => key.addEventListener("transitionend", removePianoTransition));
 
